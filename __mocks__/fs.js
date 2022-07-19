@@ -2,7 +2,7 @@
 const fs = jest.genMockFromModule('fs');
 const _fs=jest.requireActual('fs')// 引入实际的fs
 // 读
-const readMocks={}
+const readMocks={}// 做一个hash表，模拟文件
 fs.setReadMock=(path,error,data)=>{
     readMocks[path]=[error,data]
 }

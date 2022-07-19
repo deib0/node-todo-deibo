@@ -1,5 +1,5 @@
 'use strict';
-// filename can use spec,test,unit
+// filename'postfix can use spec,test,unit
 const fs = require('fs')
 const db =require('../db.js')
 jest.mock('fs')// mock fs
